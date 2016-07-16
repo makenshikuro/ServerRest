@@ -86,7 +86,7 @@ public abstract class AbstractFacade<T> {
         return ((Long) q.getSingleResult()).intValue();
     }
     public List<Espacios> espacioByPiso(String id) {
-        return getEntityManager().createNamedQuery("Espacios.findByPiso").setParameter("piso", id).getResultList();
+        return getEntityManager().createNamedQuery("findByPiso").setParameter("piso", id).getResultList();
     }
     public List<Profesores> findAllProfesors() {
         javax.persistence.criteria.CriteriaQuery cq = getEntityManager().getCriteriaBuilder().createQuery();

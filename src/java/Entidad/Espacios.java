@@ -39,7 +39,7 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Espacios.findByTipo", query = "SELECT e FROM Espacios e WHERE e.tipo = :tipo"),
     @NamedQuery(name = "Espacios.findByBloque", query = "SELECT e FROM Espacios e WHERE e.bloque = :bloque"),
     @NamedQuery(name = "Espacios.findByVisibilidad", query = "SELECT e FROM Espacios e WHERE e.visibilidad = :visibilidad"),
-    @NamedQuery(name = "Espacios.findByPiso", query = "SELECT e FROM Espacios e WHERE e.piso = :piso")})
+    @NamedQuery(name = "findByPiso", query = "SELECT e FROM Espacios e WHERE e.piso = :piso")})
 public class Espacios implements Serializable {
 
     private static final long serialVersionUID = 1L;

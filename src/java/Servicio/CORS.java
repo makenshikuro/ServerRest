@@ -20,7 +20,7 @@ public class CORS implements ContainerResponseFilter {
     @Override
     public void filter(ContainerRequestContext requestContext, ContainerResponseContext response) {
         response.getHeaders().putSingle("Access-Control-Allow-Origin", "*");
-        response.getHeaders().putSingle("Access-Control-Allow-Methods", "GET");
+        response.getHeaders().putSingle("Access-Control-Allow-Methods", "OPTIONS, GET, POST");
         response.getHeaders().putSingle("Access-Control-Allow-Headers", "Content-Type");
     }
     
