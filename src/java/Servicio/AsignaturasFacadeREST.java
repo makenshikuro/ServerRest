@@ -74,7 +74,7 @@ public class AsignaturasFacadeREST extends AbstractFacade<Asignaturas> {
     @Path("{id}/profesores")
     @Produces({MediaType.APPLICATION_JSON})
     public List<Profesores> Profesores(@PathParam("id") String id) {
-        System.out.println("Hola Asigna");
+        //System.out.println("Hola Asigna");
         return super.findProfesores(id);
     }
 

@@ -60,7 +60,7 @@ public class EspaciosFacadeREST extends AbstractFacade<Espacios> {
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Espacios find(@PathParam("id") String id) {
-        return super.find(id);
+        return super.findEspacio(id);
     }
     
     @GET
