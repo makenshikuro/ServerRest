@@ -58,7 +58,7 @@ public class EspaciosFacadeREST extends AbstractFacade<Espacios> {
 
     @GET
     @Path("{id}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces( MediaType.APPLICATION_JSON)
     public Espacios find(@PathParam("id") String id) {
         return super.findEspacio(id);
     }
@@ -72,7 +72,7 @@ public class EspaciosFacadeREST extends AbstractFacade<Espacios> {
 
     @GET
     @Override
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces( {MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Espacios> findAll() {
         return super.findAll();
     }

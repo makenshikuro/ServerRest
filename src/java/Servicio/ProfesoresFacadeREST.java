@@ -60,12 +60,12 @@ public class ProfesoresFacadeREST extends AbstractFacade<Profesores> {
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Profesores find(@PathParam("id") String id) {
-        return super.find(id);
+        return super.findProfesor(id);
     }
 
     @GET
     @Override
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces( {MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Profesores> findAll() {
         return super.findAll();
     }
